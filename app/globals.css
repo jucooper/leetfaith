@@ -5,9 +5,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair Display:wght@400;500;600;700;800;900&display=swap');
 
+:root {
+  --bg-color: rgba(255, 254, 254, 0.97);
+  --text-color: #000000;
+}
+
 body {
-  color: black;
-  background-color: white;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   font-family: 'Playfair Display', serif;
 }
 
