@@ -5,7 +5,6 @@ export default function AboutPage() {
             <h1 className="text-6xl bg-gradient-to-l from-orange-500 to-yellow-300 text-transparent bg-clip-text text-center py-8">
                 🌱
             </h1>
-            <h2 className="text-4xl text-center">The Meaning of Leet Faith</h2>
             <p className="py-1">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
