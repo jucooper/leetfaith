@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-import Navbar from "@/components/Navbar";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Leet Faith",
-  description: "Matthew 13:37",
+  title: {
+    default: "leetfaith",
+    template: "%s | leetfaith",
+  },
+  description:
+    "Matthew 13:37",
 };
 
 export default function RootLayout({
@@ -15,8 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
-        <main>{children}</main> 
+        <main className="site-main">{children}</main>
       </body>
     </html>
   );
