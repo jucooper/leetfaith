@@ -2,6 +2,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+Use Node.js 24. This project uses Next.js 16 and React 19.
+Run `npm ci` to install dependencies, `npm run lint` to run ESLint, and
+`npm run build` to verify the production build.
+
 First, run the development server:
 
 ```bash
@@ -18,7 +22,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The site uses system fonts. Development output is stored in `.next-dev`;
+production builds use `.next` so builds do not overwrite the running dev cache.
 
 ## Learn More
 

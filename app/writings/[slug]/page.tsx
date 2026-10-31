@@ -4,7 +4,7 @@ import Markdown from "react-markdown";
 import { getWritings } from "@/lib/writings";
 
 type WritingPageProps = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 function getWriting(slug: string) {
@@ -17,12 +17,14 @@ export function generateStaticParams() {
   return getWritings().map((writing) => ({ slug: writing.slug }));
 }
 
-export function generateMetadata({ params }: WritingPageProps): Metadata {
-  return { title: getWriting(params.slug).title };
+export async function generateMetadata({ params }: WritingPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  return { title: getWriting(slug).title };
 }
 
-export default function WritingPage({ params }: WritingPageProps) {
-  const writing = getWriting(params.slug);
+export default async function WritingPage({ params }: WritingPageProps) {
+  const { slug } = await params;
+  const writing = getWriting(slug);
 
   return (
     <article className="page-content">
