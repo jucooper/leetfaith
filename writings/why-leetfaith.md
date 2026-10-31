@@ -20,6 +20,6 @@ And that was pretty much it.
 
 I've had some big aspirations for LeetFaith over the years, but I've also come to realize that I don't need to force it into becoming something. If God calls me to do something more with it, I'll pursue that. Until then, I'm content to patiently wait and see where He leads.
 
-I was reminded of something similar when I was listening to Phillip Anthony Mitchell's sermon on Acts 1 & 2. TLDR; He explained that a season of preparation may last days, months, or years.
+I was reminded of something similar when I was listening to Philip Anthony Mitchell's sermon on Acts 1 & 2. TLDR; He explained that a season of preparation may last days, months, or years.
 
 For now, LeetFaith will just be a place to jot down my thoughts. Thoughts on the intersection of software engineering and faith, things I'm learning through my Bible studies, and whatever else comes to mind along the way.
